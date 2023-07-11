@@ -57,15 +57,24 @@
 ##########
 # Operador lógico &&(AND) e Operador lógico || (OR)
 
-idade = 16
-possui_carteira = true
-autorizacao = true
+# idade = 16
+# possui_carteira = true
+# autorizacao = true
 
-if (idade > 18 && possui_carteira) || autorizacao
-    puts 'Você pode dirigir.'
+# if (idade > 18 && possui_carteira) || autorizacao
+#     puts 'Você pode dirigir.'
+# else
+#     puts 'Você não pode dirigir.'
+# end
+
+####################
+# Operação de negacao
+
+tem_cartao = false
+
+if !tem_cartao
+    puts 'Por favor, solicite um cartão de crédito'
 else
-    puts 'Você não pode dirigir.'
+    puts 'Você já tem'
 end
-
-
 
