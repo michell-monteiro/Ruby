@@ -9,6 +9,7 @@ require 'date'
 time = Time.new
 puts "Hora atual: #{time.hour}"
 
+#Time.now.hour
 if time.hour < 12
     puts 'Bom dia!'
 else

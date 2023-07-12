@@ -8,6 +8,8 @@
 # 3. Em duas vezes, preço normal de etiqueta sem juros
 # 4. Em quatro vezes, preço normal de etiqueta mais juros de 10
 
+
+# Adicione 'round(2)' - para definir 2 casa decimais após a vírgula
 print 'Digite o valor do produto: '
 preco = gets.to_f
 tabela = nil
@@ -38,4 +40,4 @@ else
     tabela = 'Em mais de quatro vezes'
 end
 
-puts "Valor final: #{preco}\nOpção escolhida: #{tabela}"
+puts "Valor final: #{preco.round(2)}\nOpção escolhida: #{tabela}"
