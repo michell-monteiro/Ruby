@@ -7,5 +7,6 @@ novas_palavras = palavras.map do |palavra|
     palavra.upcase
 end
 
+#.inspect - exibe o array no modo array
 p palavras
 p novas_palavras

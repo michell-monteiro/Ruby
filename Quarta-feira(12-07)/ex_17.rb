@@ -2,7 +2,7 @@
 # por 4, utilize o comando redo para repetir a iteração
 
 num = 0
-until num > 20 do
+until num > 18 do
     num += 1
     redo if num % 4 == 0
     puts num
