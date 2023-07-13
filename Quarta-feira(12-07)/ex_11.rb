@@ -3,5 +3,5 @@
 
 numeros = [1,2,3,4,5]
 p numeros
-numeros.map! {|numero| numero * 2}
+numeros.map! {|numero| numero * 3}
 p numeros
