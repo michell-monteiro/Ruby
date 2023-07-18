@@ -10,9 +10,9 @@ class Animal
     end
 
     def show_animals(animal1, animal2)
-        puts animal1.nome
+        puts "Nome: #{animal1.nome}"
         animal1.speak
-        puts animal2.nome
+        puts "Nome: #{animal2.nome}"
         animal2.speak
     end
 end

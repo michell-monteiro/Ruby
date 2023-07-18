@@ -1,27 +1,20 @@
 require './animal'
-require './mammal'
+require './mammal' #A ordem de chamada importa
 require './bird'
 require './dog'
 require './cat'
 
 animal = Animal.new(nome: 'Fera')
 puts animal.nome
-animal.speak
+# animal.speak
 
-# puts
-
-# dog = Dog.new(nome: 'Half')
-# puts dog.nome
+dog = Dog.new(nome: 'Half')
+puts dog.nome
 # dog.speak
-
-# puts
-
-# cat = Cat.new(nome: 'Spike')
-# puts cat.nome
+cat = Cat.new(nome: 'Spike')
+puts cat.nome
 # cat.speak
-
-# puts
-# animal.show_animals(dog, cat)
+puts animal.show_animals(dog, cat)
 
 # cat.sleep
 # cat.sleep
@@ -30,9 +23,9 @@ animal.speak
 # dog.nurse
 # cat.nurse
 
-toucan = Bird.new(nome: 'Tuscanor', size_beak: 35)
-puts "Nome: #{toucan.nome}\nTamanho do bico: #{toucan.size_beak}"
-toucan.fly
-toucan.fly
-toucan.fly
-toucan.fly
+# toucan = Bird.new(nome: 'Tuscanor', size_beak: 35)
+# puts "Nome: #{toucan.nome}\nTamanho do bico: #{toucan.size_beak}"
+# toucan.fly
+# toucan.fly
+# toucan.fly
+# toucan.fly

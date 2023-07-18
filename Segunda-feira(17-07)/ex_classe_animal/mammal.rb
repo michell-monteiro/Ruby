@@ -4,8 +4,9 @@ class Mammal < Animal
     def beeeh
         puts "beeh"
     end
-    
+
     def initialize(attributes = {})
+        super
         @on_sleep = false
         @on_nurse = false
     end
