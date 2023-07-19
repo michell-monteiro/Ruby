@@ -35,7 +35,7 @@ module Payment
     end
 
     def bank_slip(options = {})
-        name = options{:name}
+        name = options[:name]
         document = options[:document]
         email = options[:email]
 
