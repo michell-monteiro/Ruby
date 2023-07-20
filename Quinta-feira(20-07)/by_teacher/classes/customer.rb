@@ -11,10 +11,14 @@ class Customer
     @document     = attributes[:document]
     @address      = attributes[:address] || {}
     @credit_card  = attributes[:credit_card] || {}
-    @invoices = []
+    @invoices     = []
 
     validate_attributes
     validate_address
+  end
+
+  def name
+    "#{first_name} #{last_name}"
   end
 
   def show
@@ -24,24 +28,21 @@ class Customer
     puts "Document: #{document}"
     puts "CEP #{zipcode}"
     puts "Endereço: #{full_address}"
-    puts "---------"
-    puts "Compras: "
+    puts '---'
+    puts 'Compras:'
 
     invoices.each do |invoice|
-      puts '------'
+      puts '---'
       puts "Código: #{invoice[:invoice]}"
       puts "Valor: #{invoice[:amount]}"
-      puts '------'
+      puts '---'
     end
-  end
-  
-  def name
-    "#{first_name} #{last_name}"
   end
 
   def add_invoice(invoice)
     @invoices.push(invoice)
   end
+
   private
 
   def validate_attributes
