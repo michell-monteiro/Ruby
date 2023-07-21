@@ -32,6 +32,7 @@ p alunos
 
 #6------------------------------
 alunos[:semestre] = 2
+#aluno.store[:semestre, 2]
 p alunos
 
 #7---------------------------------
