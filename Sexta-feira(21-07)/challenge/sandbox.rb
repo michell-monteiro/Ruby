@@ -1,5 +1,5 @@
 
-##
+## TENTAR FAZER COM HASH
 list_contacts = []
 position = 0
 loop do
