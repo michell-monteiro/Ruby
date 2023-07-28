@@ -1,0 +1,3 @@
+user.errors.full_messages
+
+Posso tentar usar a gem Rainbow. Ela colore o texto.
